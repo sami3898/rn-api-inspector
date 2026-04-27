@@ -1,6 +1,10 @@
+
 # rn-api-inspector
 
 Inspect API calls (fetch + axios) in real time inside your React Native app.
+
+<img width="496" height="1028" alt="apiInspector" src="https://github.com/user-attachments/assets/09c4a50e-24bb-418e-bf68-b125c8fd762b" />
+
 
 ## Installation
 
@@ -81,5 +85,3 @@ stop();
 MIT
 
 ---
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
