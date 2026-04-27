@@ -83,5 +83,3 @@ stop();
 ## License
 
 MIT
-
----

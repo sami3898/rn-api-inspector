@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "lib/module",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-native"
+  },
+  "include": ["src"],
+  "exclude": ["src/__tests__", "src/__mocks__", "src/__fixtures__", "example", "lib"]
+}

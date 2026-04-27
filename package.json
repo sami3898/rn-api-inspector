@@ -1,6 +1,6 @@
 {
   "name": "rn-api-inspector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "inspect apis in real time",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -34,7 +34,7 @@
   "scripts": {
     "example": "yarn workspace rn-api-inspector-example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "bob build",
+    "prepare": "tsc -p tsconfig.build-manual.json && tsc -p tsconfig.esm-manual.json",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
@@ -66,6 +66,7 @@
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.0.0",
+    "@react-native-clipboard/clipboard": "^1.16.3",
     "@react-native/babel-preset": "0.85.0",
     "@react-native/eslint-config": "0.85.0",
     "@react-native/jest-preset": "0.85.0",
@@ -86,7 +87,8 @@
     "react-native-web": "~0.21.1",
     "release-it": "^19.2.4",
     "turbo": "^2.8.21",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "yargs": "17.7.2"
   },
   "peerDependencies": {
     "@react-native-clipboard/clipboard": "*",
