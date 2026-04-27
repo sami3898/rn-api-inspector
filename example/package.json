@@ -12,6 +12,8 @@
     "build:web": "vite build"
   },
   "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.16.3",
+    "axios": "^1.15.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-native": "0.85.0",
